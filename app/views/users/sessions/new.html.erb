@@ -1,0 +1,27 @@
+<%= render 'layouts/navbar' %>
+<div class="row">
+  <div class="container-fluid">
+    <div class="col-md-4">
+      <div class="side-bar">
+        <div class="">
+          <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <%= f.input :email %>
+          <%= f.input :password %>
+          <%= f.button :submit %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="post-section">
+        <% @posts.each do |p| %>
+        <div class="row">
+            <div class="post">
+              <%= p.content %>
+            </div>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
