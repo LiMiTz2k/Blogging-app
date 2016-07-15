@@ -57,6 +57,7 @@ body {
   position: fixed;
   margin-top: 90px;
 }
+
 .col-centered{
     float: none;
     margin: 0 auto;
@@ -98,9 +99,57 @@ body {
   color: #F5F5F5;
 }
 
-.profile-pic {
-  border: 2px solid #000;
+.profile-image {
+  /* avatar25341_2.gif: */
+  border: 2px solid #000000;
+  margin-top: 30px;
 }
+
+.profile-links {
+  /* Kofi Dankwa: */
+  font-family: Montserrat-Regular;
+  font-size: 15px;
+  color: #000000;
+  a {
+    text-decoration: none !important;
+    color: #000000;
+  }
+  #setting {
+    margin-top: 150px;
+    margin-left: 13px;
+  }
+  #handler {
+    padding: 3px;
+  }
+  #fullame {
+    padding: 3px;
+  }
+}
+
+.text-wrapper {
+  max-width: 70rem;
+  max-height: 60rem;
+  padding: 5px 5px 5px 5px;
+  overflow: auto;
+  /* What is Lorem Ipsum?: */
+  font-family: Montserrat-Regular;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0px;
+
+  h1 {
+    text-align: center;
+  }
+
+  h4 {
+    /* @Bob1973: */
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+    color: #43740E;
+    text-align: right;
+  }
+}
+
 
 .profile-text {
   font-family: Montserrat-Regular;
@@ -120,16 +169,68 @@ body {
 }
 
 
-highlight col-*
- .row [class*='col-'] {
-      background-color: #ffeeee;
-      background-clip: content-box;
-      min-height: 20px;
-}
-
 .container {
    max-width: 100%;
    /* This will remove the outer padding, and push content edge to edge */
    padding-right: 0;
    padding-left: 0;
  }
+
+ .login {
+
+    .input-wrapper {
+     /* Rectangle 9: */
+     background: rgba(215,215,215,0.15);
+     border-radius: 3px;
+     border: none;
+     width: 22rem;
+   }
+    .input-email {
+       margin-left: 90px;
+   }
+   .input-password {
+     margin-left: 77px;
+   }
+   .input-title {
+     text-align: center;
+     margin-right: 45px;
+   }
+   .input-fullname {
+     margin-left: 72px;
+   }
+   .input-username {
+     margin-left: 72px;
+   }
+   .input-password-confirm {
+     margin-left: 30px;
+   }
+   .input-password-current {
+     margin-left: 45px;
+   }
+
+ }
+
+.edit-links {
+  margin-top: 20px;
+  a {
+    color: #CA4343 !important;
+  }
+}
+ .login-btn, .signup-btn, .edit-btn {
+   /* Rectangle 9 Copy 4: */
+   background: rgba(116,187,38,0.50);
+   border: 0px solid #000000;
+   border-radius: 3px;
+   /* Submit: */
+   font-family: Montserrat-Regular;
+   color: #F5F5F5;
+   margin-left: 77px;
+ }
+
+.signup-btn {
+  margin-left: 74px;
+}
+
+.edit-btn {
+  margin-left: 53px;
+}

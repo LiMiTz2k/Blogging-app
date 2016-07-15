@@ -10,7 +10,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    @posts = User.find_by(email: current_user.email).posts
+    @posts = current_user.posts
   end
 
   def create
@@ -25,7 +25,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:content)
+    params.require(:post).permit(:content, :title)
   end
 
 end

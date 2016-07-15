@@ -1,0 +1,16 @@
+<div class="col-md-4">
+  <div class="side-bar">
+    <div class="row">
+      <div class="container col-md-offset-4">
+        <div class="profile-secton">
+          <%=image_tag avatar_url(current_user), class: 'profile-image' %>
+          <div class="profile-links">
+            <p id="fullname"><%= current_user.full_name %> </p>
+            <p id="handler"><%= link_to user_handler(user: current_user), post_path(current_user) %></p>
+            <p id="setting"><%= link_to 'Settings', edit_user_registration_path %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -4,9 +4,16 @@ module ApplicationHelper
     "http://gravatar.com/avatar/#{gravatar_id}.png"
   end
 
-  def user_handler(user)
-    user_name = user.username
-    "@#{user_name}"
+  def user_handler(options = {})
+    if options[:user].present?
+      user_name = options[:user].username
+      "@#{user_name}"
+    elsif options[:post].present?
+      i = options[:post].user_id
+      user = User.find_by(id: i)
+      user_name = user.username
+      "@#{user_name}"
+    end
   end
 
   def embedded_svg(filename, options = {})
@@ -18,9 +25,6 @@ module ApplicationHelper
       svg["class"]= options[:class]
     end
     raw doc
-  end
-
-  def admin?
   end
 
 end

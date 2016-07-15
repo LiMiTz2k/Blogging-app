@@ -1,67 +1,24 @@
 <%= render 'layouts/navbar' %>
 <div class="row">
-  <div class="col-md-4">
-    <div class="side-bar">
-      <div class="">
+  <div class="container-fluid">
+    <div class="col-md-4">
+      <div class="side-bar">
+        <div class="container login col-md-offset-1">
+          <h2 class="input-title">Edit profile</h2>
+          <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <%= f.input :full_name, input_html: {class: 'input-wrapper'}, label_html: {class: 'input-fullname'}, required: true %>
+          <%= f.input :password_confirmation, input_html: {class: 'input-wrapper'}, label_html: {class: 'input-password-confirm'} %>
+          <%= f.input :current_password, input_html: {class: 'input-wrapper'}, label_html: {class: 'input-password-current'} %>
+          <%= f.button :submit, class: 'edit-btn' %>
+          <% end %>
+          <div class="edit-links">
+            <p>Unhappy? <%= link_to 'Cancel my account', registration_path(resource_name), data: {confirm: 'Are you sure'}, method: :delete %></p>
+            <p><%= link_to "Back", :back %></p>
+          </div>
+
+        </div>
       </div>
     </div>
+    <%= render 'layouts/post' %>
   </div>
-</div>
-<div class=side_bar>
-  <div class="side_bar_content">
-       <div class="login_wrapper">
-         <h2 class="side_bar_title">Edit Profile</h2>
-         <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-           <div>
-             <div class="side_bar_field_title">
-               <%= f.label :Full_name %>
-             </div>
-             <div class="side_bar_field_box">
-               <%= f.text_field :full_name, class: 'side_bar_field_box' %>
-             </div>
-           </div>
-           <div>
-             <div class="side_bar_field_title">
-               <%= f.label :email%>
-             </div>
-             <div class="side_bar_field_box">
-               <%= f.email_field :email, class: 'side_bar_field_box' %>
-             </div>
-           </div>
-           <div>
-             <div class="side_bar_field_title">
-               <%= f.label :password_confirmation %>
-             </div>
-             <div class="side_bar_field_box">
-               <%= f.password_field :password_confirmation, class: 'side_bar_field_box' %>
-             </div>
-           </div>
-           <div>
-             <div class="side_bar_field_title">
-               <%= f.label :current_password %>
-             </div>
-             <div class="side_bar_field_box">
-               <%= f.password_field :current_password, class: 'side_bar_field_box' %>
-             </div>
-           </div>
-           <div>
-             <div class="side_bar_field_title">
-               <%= f.label :username %>
-             </div>
-             <div class="side_bar_field_box">
-               <%= f.text_field :username, class: 'side_bar_field_box' %>
-             </div>
-           </div>
-           <div class="actions">
-             <%= f.submit "Update", class: 'green_btn' %>
-           </div>
-       </div>
-    <% end %>
-    <h3>Cancel my account</h3>
-
-    <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
-
-    <%= link_to "Back", :back %>
-  </div>
-
 </div>
