@@ -1,5 +1,5 @@
 # Blogging-app
-Blogging application resembling popular blogging application Medium
+Blogging application resembling popular blogging app Medium built using Ruby on Rails.
 
 LIVE DEMO: https://blooming-plateau-40881.herokuapp.com/users/sign_in
 
@@ -8,9 +8,9 @@ LIVE DEMO: https://blooming-plateau-40881.herokuapp.com/users/sign_in
 
 Todo List:
 
-1) User social graph - users can follow each other and view each others blogs.
-2) Add jquery or some other js frameworks to achieve some more functionality.
-3) Add search functionality - users will be able to search for blogs via #hastags and other users.
-4) Make UI more responsive to work with smaller screen sizes.
+* User social graph - users can follow each other and view each others blogs.
+* Add jquery or some other js frameworks to achieve some more functionality.
+* Add search functionality - users will be able to search for blogs via #hastags and other users.
+* Make UI more responsive to work with smaller screen sizes.
 
 
