@@ -86,18 +86,6 @@ body {
   position: relative;
 }
 
-.new-btn {
-  margin-bottom: 15px;
-  margin-left: 285px;
-  /* Rectangle 9 Copy 4: */
-  background: rgba(116,187,38,0.50);
-  border: 0px solid #000000;
-  border-radius: 0.5px;
-/* Submit: */
-  font-family: Montserrat-Regular;
-  font-size: 18px;
-  color: #F5F5F5;
-}
 
 .profile-image {
   /* avatar25341_2.gif: */
@@ -216,7 +204,7 @@ body {
     color: #CA4343 !important;
   }
 }
- .login-btn, .signup-btn, .edit-btn {
+ .login-btn, .signup-btn, .edit-btn, .new-btn {
    /* Rectangle 9 Copy 4: */
    background: rgba(116,187,38,0.50);
    border: 0px solid #000000;
@@ -233,4 +221,9 @@ body {
 
 .edit-btn {
   margin-left: 53px;
+}
+
+.new-btn {
+  margin-bottom: 15px;
+  margin-left: 285px;
 }
