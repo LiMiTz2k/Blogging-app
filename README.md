@@ -10,7 +10,7 @@ Todo List:
 
 * User social graph - users can follow each other and view each others blogs.
 * Add jquery or some other js frameworks to achieve some more functionality.
-* Add search functionality - users will be able to search for blogs via #hastags and other users.
+* Add search functionality - users will be able to search for blogs via #hashtags and other users.
 * Make UI more responsive to work with smaller screen sizes.
 
 
